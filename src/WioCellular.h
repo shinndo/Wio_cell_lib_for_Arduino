@@ -120,6 +120,8 @@ public:
 	int HttpGet(const char* url, char* data, int dataSize, const WioCellularHttpHeader& header);
 	bool HttpPost(const char* url, const char* data, int* responseCode);
 	bool HttpPost(const char* url, const char* data, int* responseCode, const WioCellularHttpHeader& header);
+	int HttpPost(const char* url, const char* requestData, char* responseData, int dataSize, int* responseCode);
+	int HttpPost(const char* url, const char* requestData, char* responseData, int dataSize, int* responseCode, const WioCellularHttpHeader& header);
 
 	bool SendUSSD(const char* in, char* out, int outSize);
 
